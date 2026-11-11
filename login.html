@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — Faculty Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{font-family:'DM Sans',sans-serif;color:#172b4d;background:#f4f8ff}*{box-sizing:border-box}body{min-height:100vh;margin:0;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 12% 10%,#dce9ff 0,transparent 32%),linear-gradient(135deg,#f7fbff,#edf4ff)}.login-shell{width:min(940px,100%);display:grid;grid-template-columns:1fr 420px;overflow:hidden;border:1px solid #d7e5fb;border-radius:24px;background:#fff;box-shadow:0 24px 70px rgba(47,79,143,.18)}.welcome{padding:56px;background:linear-gradient(155deg,#4472C4,#2F4F8F);color:#fff}.mark{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#fff;color:#4472C4;font-weight:800;font-size:22px}.eyebrow{margin-top:46px;color:#dce9ff;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700}.welcome h1{max-width:390px;margin:14px 0;font:800 38px/1.08 'Plus Jakarta Sans',sans-serif}.welcome p{max-width:370px;color:#e2ecff;font-size:16px;line-height:1.65}.feature{display:flex;align-items:center;gap:10px;margin-top:34px;color:#fff;font-size:14px}.feature i{color:#fff}.form-panel{padding:54px 44px}.form-panel h2{margin:0;color:#172b4d;font:800 27px 'Plus Jakarta Sans',sans-serif}.subtitle{margin:9px 0 30px;color:#6b7f9f;font-size:14px;line-height:1.5}.field{display:block;margin:19px 0}.field span{display:block;margin-bottom:8px;color:#30476b;font-size:13px;font-weight:700}.field input{width:100%;height:46px;padding:0 13px;border:1px solid #cedbf0;border-radius:10px;color:#172b4d;background:#fbfdff;font:15px inherit;outline:none}.field input:focus{border-color:#02A4EF;box-shadow:0 0 0 3px rgba(2,164,239,.13)}.password-wrap{position:relative}.password-wrap input{padding-right:72px}.show-password{position:absolute;right:8px;top:6px;height:34px;padding:0 9px;border:0;border-radius:7px;background:transparent;color:#2F4F8F;font:700 12px inherit;cursor:pointer;transition:background .18s ease,color .18s ease}.show-password:hover{background:#eef3ff;color:#4472C4}.show-password:focus-visible{outline:3px solid rgba(2,164,239,.28);outline-offset:2px}.login-options{display:flex;align-items:center;justify-content:space-between;margin:4px 0 4px;font-size:12px}.remember{display:flex;align-items:center;gap:7px;color:#617594;cursor:pointer}.remember input{width:15px;height:15px;accent-color:#4472C4;cursor:pointer}.forgot{border:0;background:transparent;padding:4px 0;color:#2F4F8F;cursor:pointer;font:700 12px inherit}.forgot:hover{text-decoration:underline;color:#4472C4}.forgot:focus-visible{outline:3px solid rgba(2,164,239,.28);outline-offset:2px}.submit{width:100%;height:47px;margin-top:13px;cursor:pointer;transition:background .18s ease,transform .18s ease,box-shadow .18s ease;border:1px solid #4472C4;border-radius:10px;background:#4472C4;color:#fff;cursor:pointer;font:700 15px inherit;box-shadow:0 7px 16px rgba(47,79,143,.2)}.submit:hover{background:#2F4F8F;border-color:#2F4F8F;transform:translateY(-1px);box-shadow:0 10px 20px rgba(47,79,143,.28)}.submit:focus-visible{outline:3px solid rgba(2,164,239,.32);outline-offset:3px}.demo-button{width:100%;margin-top:9px;padding:10px 12px;border:1px solid #b9cceb;border-radius:9px;background:#fff;color:#2F4F8F;cursor:pointer;font:700 12px inherit;transition:background .18s ease,border-color .18s ease,transform .18s ease}.demo-button:hover{background:#eef3ff;border-color:#4472C4;transform:translateY(-1px)}.demo-button:focus-visible{outline:3px solid rgba(2,164,239,.28);outline-offset:2px}.submit:disabled{opacity:.6;cursor:wait}.error{min-height:20px;margin-top:14px;color:#b42318;font-size:13px;font-weight:600}.demo{margin-top:23px;padding:12px;border:1px solid #dce8f8;border-radius:10px;background:#f5f9ff;color:#617594;font-size:12px;line-height:1.5}.demo strong{color:#2F4F8F}@media(max-width:720px){.login-shell{grid-template-columns:1fr}.welcome{padding:32px}.welcome h1{font-size:30px}.eyebrow{margin-top:30px}.form-panel{padding:34px 26px}}
+  </style>
+</head>
+<body>
+  <main class="login-shell">
+    <section class="welcome">
+      <div class="mark">FD</div>
+      <div class="eyebrow">Lecturer workspace</div>
+      <h1>Learning, in view.</h1>
+      <p>Sign in to manage your courses, students, assessments, grades, and attendance from one focused workspace.</p>
+      <div class="feature"><i>✓</i><span>Secure lecturer access</span></div>
+      <div class="feature"><i>✓</i><span>Course performance at a glance</span></div>
+    </section>
+    <section class="form-panel">
+      <h2>Welcome back</h2>
+      <p class="subtitle">Sign in to your Faculty Desk account.</p>
+      <form id="login-form">
+        <label class="field"><span>Email address</span><input id="email" type="email" autocomplete="username" required placeholder="you@university.edu"></label>
+        <label class="field"><span>Password</span><div class="password-wrap"><input id="password" type="password" autocomplete="current-password" required placeholder="Enter your password"><button class="show-password" id="show-password" type="button">Show</button></div></label>
+        <div class="login-options"><label class="remember"><input id="remember-me" type="checkbox"> <span>Remember me</span></label><button class="forgot" id="forgot-password" type="button">Forgot password?</button></div><button class="submit" id="login-button" type="submit">Sign in</button>
+        <div class="error" id="login-error" role="alert" aria-live="polite"></div>
+      </form>
+      <div class="demo"><strong>First-time demo login</strong><br>Email: dorcas@faculty.test<br>Password: Dorcas@123<button class="demo-button" id="demo-login" type="button">Use demo account</button></div>
+    </section>
+  </main>
+  <script>
+    const form=document.getElementById('login-form');
+    const error=document.getElementById('login-error');
+    const button=document.getElementById('login-button');
+    document.getElementById('forgot-password').addEventListener('click',()=>{error.style.color='#2F4F8F'; error.textContent='For password recovery, contact your administrator or configure a reset email service.';}); document.getElementById('show-password').addEventListener('click',()=>{const input=document.getElementById('password'); const visible=input.type==='text'; input.type=visible?'password':'text'; document.getElementById('show-password').textContent=visible?'Show':'Hide'; document.getElementById('show-password').setAttribute('aria-pressed',String(!visible));}); document.getElementById('demo-login').addEventListener('click',()=>{document.getElementById('email').value='dorcas@faculty.test'; document.getElementById('password').value='Dorcas@123'; document.getElementById('password').focus(); error.textContent='Demo credentials filled. Click Sign in to continue.'; error.style.color='#2F4F8F';});
+    form.addEventListener('submit',async event=>{event.preventDefault(); error.textContent=''; button.disabled=true; button.textContent='Signing in…'; try{const response=await fetch('/api/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({email:document.getElementById('email').value.trim(),password:document.getElementById('password').value,rememberMe:document.getElementById('remember-me').checked})}); const result=await response.json(); if(!response.ok) throw new Error(result.message||'Unable to sign in'); window.location.href='/';}catch(err){error.textContent=err.message;}finally{button.disabled=false;button.textContent='Sign in';}});
+  </script>
+</body>
+</html>
